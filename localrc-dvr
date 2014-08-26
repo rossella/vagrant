@@ -17,17 +17,10 @@ ADMIN_PASSWORD=admin
 LOGFILE=stack.sh.log
 LOGDAYS=1
 SCREEN_LOGDIR=/tmp/logs
-
-CINDER_BRANCH=stable/havana
-GLANCE_BRANCH=stable/havana
-HORIZON_BRANCH=stable/havana
-KEYSTONE_BRANCH=stable/havana
-NOVA_BRANCH=stable/havana
-NEUTRON_BRANCH=stable/havana
-SWIFT_BRANCH=stable/havana
-
+Q_DVR_MODE=dvr_snat'
 API_RATE_LIMIT=False
 TEMPEST_ALLOW_TENANT_ISOLATION=True
+LOG_COLOR=False
 
 DATABASE_PASSWORD=admin
 RABBIT_PASSWORD=admin

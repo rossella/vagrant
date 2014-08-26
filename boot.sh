@@ -13,6 +13,6 @@ git remote add rossella git@github.com:rossella/neutron.git
 cd $HOME
 git clone https://github.com/rossella/dotfiles.git
 
-cd $HOME/dotfiles/script
-sh bootstrap
+cd $HOME/dotfiles
+sh script/bootstrap
 
