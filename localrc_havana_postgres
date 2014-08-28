@@ -1,0 +1,40 @@
+disable_service mysql
+enable_service postgresql
+disable_service n-net
+enable_service q-svc
+enable_service q-agt
+enable_service q-dhcp
+enable_service q-l3
+enable_service q-meta
+enable_service neutron
+#  # Optional, to enable tempest configuration as part of devstack
+enable_service tempest
+RECLONE=yes
+DATABASE_PASSWORD=admin
+RABBIT_PASSWORD=admin
+HOST_IP=127.0.0.1
+SERVICE_TOKEN=admin
+SERVICE_PASSWORD=admin
+ADMIN_PASSWORD=admin
+LOGFILE=stack.sh.log
+LOGDAYS=1
+SCREEN_LOGDIR=/tmp/logs
+
+CINDER_BRANCH=stable/havana
+GLANCE_BRANCH=stable/havana
+HORIZON_BRANCH=stable/havana
+KEYSTONE_BRANCH=stable/havana
+KEYSTONECLIENT_BRANCH=stable/havana
+NOVA_BRANCH=stable/havana
+NOVACLIENT_BRANCH=stable/havana
+NEUTRON_BRANCH=stable/havana
+SWIFT_BRANCH=stable/havana
+
+API_RATE_LIMIT=False
+TEMPEST_ALLOW_TENANT_ISOLATION=True
+
+DATABASE_PASSWORD=admin
+RABBIT_PASSWORD=admin
+SERVICE_TOKEN=admin
+SERVICE_PASSWORD=admin
+ADMIN_PASSWORD=admin
