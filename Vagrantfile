@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network :forwarded_port, guest: 80, host: 8080, auto_correct: true
   config.vm.network :forwarded_port, guest: 6080, host: 6080, auto_correct: true
+  config.vm.network :forwarded_port, guest: 22, host: 2224, id: 'ssh', auto_correct: true
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = vmname
